@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skyline RP — Site Officiel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0e1621;color:#fff}
+    header{background:linear-gradient(90deg,#0b5cff,#1fa2ff);padding:25px;text-align:center}
+    nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;background:#0a1e3f;padding:12px;position:sticky;top:0;z-index:10}
+    nav button{background:#1fa2ff;border:none;padding:10px 16px;border-radius:8px;color:#fff;cursor:pointer;font-weight:bold;transition:0.2s}
+    nav button:hover{background:#1486d8;transform:scale(1.05)}
+    nav button.activeBtn{background:#0b5cff}
+    section{display:none;padding:25px;max-width:1000px;margin:auto;animation:fade 0.3s}
+    section.active{display:block}
+    h2{color:#1fa2ff}
+    .card{background:#13233f;padding:18px;border-radius:12px;margin-bottom:18px;box-shadow:0 0 10px rgba(0,0,0,0.4)}
+    input,textarea,select{width:100%;padding:10px;border-radius:6px;border:none;margin-top:6px;margin-bottom:12px}
+    .btn{background:#1fa2ff;border:none;padding:10px 15px;border-radius:8px;color:#fff;font-weight:bold;cursor:pointer;margin-top:5px}
+    .btn:hover{background:#1486d8}
+    .btn-danger{background:#ff4d4d}
+    .btn-danger:hover{background:#d93636}
+    footer{text-align:center;padding:15px;background:#0a1e3f;margin-top:30px;font-size:14px}
+    @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌆 Skyline RP</h1>
+  <p>Site officiel du serveur Discord Skyline RP</p>
+</header>
+
+<nav>
+  <button onclick="show('home')">Accueil</button>
+  <button onclick="show('reglement')">Règlement</button>
+  <button onclick="show('avis')">Avis</button>
+  <button onclick="show('tickets')">Tickets</button>
+  <button onclick="show('staff')">Staff</button>
+  <button onclick="show('salons')">Salons Discord</button>
+  <button onclick="show('roles')">Rôles RP</button>
+  <button onclick="show('admin')">Espace Modération</button>
+</nav>
+
+<section id="home" class="active">
+  <h2>🏙️ Bienvenue sur Skyline RP</h2>
+  <div class="card">
+    Skyline RP est un serveur **RolePlay sérieux**, immersif et respectueux.
+    <br><br>
+    🔹 RP réaliste
+    🔹 Staff actif
+    🔹 Communauté mature
+  </div>
+</section>
+
+<section id="reglement">
+  <h2>📜 Règlement Officiel Skyline RP</h2>
+
+  <div class="card">
+    <h3>I — Principes généraux</h3>
+    1. Skyline RP est un serveur RolePlay sérieux basé sur le réalisme.<br>
+    2. Toute personne rejoignant le serveur accepte l'intégralité du règlement.<br>
+    3. L'ignorance du règlement n'est pas une excuse valable.<br>
+    4. Le respect entre joueurs est obligatoire en toute circonstance.<br>
+    5. Les décisions du staff sont applicables immédiatement.<br>
+  </div>
+
+  <div class="card">
+    <h3>II — Règlement Communauté</h3>
+    1. Aucun propos insultant, discriminatoire, raciste ou haineux n'est toléré.<br>
+    2. Le harcèlement, même déguisé en "plaisanterie", est strictement interdit.<br>
+    3. Le spam, flood ou publicité non autorisée entraînera une sanction.<br>
+    4. Les pseudos doivent être lisibles, sans symboles excessifs.<br>
+    5. L'utilisation de comptes secondaires est interdite sans autorisation staff.<br>
+    6. Le contournement de sanction entraîne un bannissement définitif.<br>
+  </div>
+
+  <div class="card">
+    <h3>III — Règlement Vocal</h3>
+    1. Le respect est obligatoire en vocal comme à l'écrit.<br>
+    2. Soundboard abusif interdit.<br>
+    3. Micro saturé volontairement = sanction.<br>
+    4. Aucun bruit volontaire (cris, musique forte) n'est autorisé.<br>
+    5. Le staff peut mute/kick pour maintenir l'ordre.<br>
+  </div>
+
+  <div class="card">
+    <h3>IV — Règlement RolePlay Général</h3>
+    1. Le Fear RP est obligatoire dans toutes les situations dangereuses.<br>
+    2. Le Pain RP doit être respecté après blessures ou accidents.<br>
+    3. Le Meta Gaming est strictement interdit.<br>
+    4. Le Power Gaming est interdit.<br>
+    5. Le No RP Fear est sanctionnable.<br>
+    6. Toute scène doit rester cohérente et réaliste.<br>
+    7. Le Win RP est interdit.
+  </div>
+
+  <div class="card">
+    <h3>V — Règlement Illégal RP</h3>
+    1. Les actions illégales doivent être préparées RP.<br>
+    2. Les braquages doivent respecter les limites définies par le staff.<br>
+    3. Le Free Kill est interdit.<br>
+    4. Les prises d'otages doivent être cohérentes et réalistes.<br>
+    5. Les scènes criminelles doivent laisser une chance RP aux forces de l'ordre.<br>
+  </div>
+
+  <div class="card">
+    <h3>VI — Règlement Forces de l'ordre</h3>
+    1. Les forces de l'ordre doivent agir de manière réaliste.<br>
+    2. L'abus de pouvoir est strictement interdit.<br>
+    3. Les procédures doivent être respectées.<br>
+    4. Le RP corruption est interdit sans validation staff.<br>
+    5. Les tirs doivent être justifiés RP.<br>
+  </div>
+
+  <div class="card">
+    <h3>VII — Règlement EMS / Pompier</h3>
+    1. Obligation de RP médical réaliste.<br>
+    2. Aucun refus d'intervention sans raison RP valable.<br>
+    3. Neutralité totale dans les scènes RP.<br>
+    4. Respect du Pain RP des victimes.<br>
+  </div>
+
+  <div class="card">
+    <h3>VIII — Sanctions</h3>
+    1. Avertissement verbal.<br>
+    2. Avertissement écrit.<br>
+    3. Kick.<br>
+    4. Ban temporaire.<br>
+    5. Ban permanent.
+  </div>
+
+  <div class="card">
+    <h3>IX — Acceptation</h3>
+    En rejoignant Skyline RP, vous acceptez ce règlement dans son intégralité.<br>
+    Le staff se réserve le droit de modifier le règlement à tout moment.
+  </div>
+</section>
+
+<section id="avis">
+  <h2>⭐ Avis Serveur & Staff</h2>
+  <div class="card">
+    <label>Pseudo</label>
+    <input id="pseudo" placeholder="Ton pseudo">
+    <label>Type d'avis</label>
+    <select id="typeAvis">
+      <option>Serveur</option>
+      <option>Staff</option>
+    </select>
+    <label>Note</label>
+    <select id="note">
+      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+    </select>
+    <label>Avis</label>
+    <textarea id="message" placeholder="Ton avis détaillé"></textarea>
+    <button class="btn" onclick="addAvis()">Envoyer l'avis</button>
+  </div>
+</section>
+
+<section id="tickets">
+  <h2>🎫 Système de tickets</h2>
+  <div class="card">
+    <label>Pseudo</label>
+    <input id="tpseudo" placeholder="Ton pseudo">
+    <label>Type de ticket</label>
+    <select id="ttype">
+      <option>Support</option>
+      <option>Signalement</option>
+      <option>Question RP</option>
+      <option>Plainte Staff</option>
+    </select>
+    <label>Description</label>
+    <textarea id="tmsg" placeholder="Explique ton problème en détail"></textarea>
+    <button class="btn" onclick="addTicket()">Ouvrir un ticket</button>
+  </div>
+</section>
+
+<section id="admin">
+  <h2>🛡️ Espace Modération (sécurisé)</h2>
+  <div class="card" id="loginBox">
+    <label>Mot de passe staff</label>
+    <input id="adminPass" type="password" placeholder="Mot de passe">
+    <button class="btn" onclick="loginAdmin()">Connexion</button>
+  </div>
+  <div id="adminPanel" style="display:none">
+    <h3>📌 Avis reçus</h3>
+    <div id="avisList"></div>
+    <h3>🎫 Tickets</h3>
+    <div id="ticketList"></div>
+  </div>
+</section>
+
+<section id="staff">
+  <h2>👮 Équipe Staff</h2>
+  <div class="card">👑 Fondateur : Skyline</div>
+  <div class="card">⚙️ Co-Fondateurs : Gestion globale du serveur</div>
+  <div class="card">🛡️ Administrateurs : Gestion RP & sanctions</div>
+  <div class="card">🔧 Modérateurs : Surveillance, aide joueurs</div>
+  <div class="card">🎧 Support : Assistance tickets</div>
+</section>
+
+<section id="salons">
+  <h2>💬 Salons Discord</h2>
+  <div class="card"><b>📢 Informations</b><br>#annonces • #règlement • #événements • #partenariats</div>
+  <div class="card"><b>💬 Communauté</b><br>#discussion-générale • #médias • #sondages • #giveaway</div>
+  <div class="card"><b>🎭 RolePlay</b><br>#annonces-rp • #session-rp • #lexique-rp • #zones-safe</div>
+  <div class="card"><b>🆘 Support</b><br>#ticket-support • #signalement</div>
+  <div class="card"><b>🎙️ Vocaux</b><br>Général • RP • Staff</div>
+</section>
+
+<section id="roles">
+  <h2>🎭 Rôles RP</h2>
+  <div class="card"><b>👮 LSPD</b><br>Maintien de l'ordre, enquêtes, arrestations RP réalistes.</div>
+  <div class="card"><b>🚑 EMS</b><br>Soins médicaux, interventions d'urgence RP.</div>
+  <div class="card"><b>🔥 Pompier</b><br>Incendies, secours, catastrophes RP.</div>
+  <div class="card"><b>🧑‍💼 Civil</b><br>Travail légal, vie RP normale.</div>
+  <div class="card"><b>💀 Criminel</b><br>Activités illégales RP encadrées par les règles.</div>
+</section>
+
+<section id="admin">
+  <h2>🛡️ Avis visibles par la modération</h2>
+  <div id="avisList"></div>
+</section>
+
+<footer>
+  © 2026 — Skyline RP | Tous droits réservés
+</footer>
+
+<script>
+function show(id){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('activeBtn'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('activeBtn');
+  if(id==='admin'){loadAvis();loadTickets();}
+}
+
+function addAvis(){
+  const pseudo=document.getElementById('pseudo').value;
+  const note=document.getElementById('note').value;
+  const msg=document.getElementById('message').value;
+  if(!pseudo||!msg) return alert('Remplis tout');
+  const avis=JSON.parse(localStorage.getItem('avis')||'[]');
+  avis.push({pseudo,note,msg});
+  localStorage.setItem('avis',JSON.stringify(avis));
+  alert('Avis envoyé');
+  document.getElementById('pseudo').value='';
+  document.getElementById('message').value='';
+}
+
+function loadAvis(){
+  const avis=JSON.parse(localStorage.getItem('avis')||'[]');
+  const div=document.getElementById('avisList');
+  div.innerHTML='';
+  avis.forEach(a=>{
+    div.innerHTML+=`<div class='card'><b>${a.pseudo}</b> — ${a.type} — ⭐ ${a.note}<br>${a.msg}</div>`;
+  });
+}
+
+function addTicket(){
+  const p=document.getElementById('tpseudo').value;
+  const t=document.getElementById('ttype').value;
+  const m=document.getElementById('tmsg').value;
+  if(!p||!m) return alert('Remplis tout');
+  const tickets=JSON.parse(localStorage.getItem('tickets')||'[]');
+  tickets.push({p,t,m});
+  localStorage.setItem('tickets',JSON.stringify(tickets));
+  alert('Ticket envoyé au staff');
+  document.getElementById('tpseudo').value='';
+  document.getElementById('tmsg').value='';
+}
+
+function loadTickets(){
+  const tickets=JSON.parse(localStorage.getItem('tickets')||'[]');
+  const div=document.getElementById('ticketList');
+  div.innerHTML='';
+  tickets.forEach((t,i)=>{
+    div.innerHTML+=`<div class='card'><b>${t.p}</b> — ${t.t} — <b>${t.status||'Ouvert'}</b><br>${t.m}<br><button class='btn' onclick="setStatus(${i},'En cours')">En cours</button> <button class='btn' onclick="setStatus(${i},'Fermé')">Fermer</button></div>`;
+  });
+}
+
+function setStatus(i,s){
+  const tickets=JSON.parse(localStorage.getItem('tickets')||'[]');
+  tickets[i].status=s;
+  localStorage.setItem('tickets',JSON.stringify(tickets));
+  loadTickets();
+}
+
+function loginAdmin(){
+  if(document.getElementById('adminPass').value==='skyline123'){
+    document.getElementById('loginBox').style.display='none';
+    document.getElementById('adminPanel').style.display='block';
+    loadAvis();loadTickets();
+  }else alert('Mot de passe incorrect');
+}</b> — ${t.t}<br>${t.m}</div>`;
+  });
+}</b> — ⭐ ${a.note}<br>${a.msg}</div>`;
+  });
+}
+</script>
+
+</body>
+</html>
+
